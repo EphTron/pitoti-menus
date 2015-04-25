@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<!--- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">-->
+<!---<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="modified-bootstrap.min.css">
+
+<style type="text/css">
+  body {
+    background: rgba(1, 0, 0,1);
+    margin: 0;
+    overflow: hidden;
+    min-width: 100px;
+    min-height: 100px;
+    width: 100%;
+    height: 100%;
+  }
+
+  #bg {
+    position: relative;
+    border-radius: 5px 5px 5px 5px;
+    background: rgba(85, 100, 75, 0.8);
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .btn{
+    background: rgba(180, 240, 140, 0.9);
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgba(85, 100, 75, 0.8);
+    border-radius: 10px;
+  }
+  .btn:active{
+    background: rgba(240, 180, 60, 0.9);
+  }
+
+  .gua-btn{
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    min-width: 10px;
+    min-height: 10px;
+  }
+
+  .list-group-item{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    min-width: 10px;
+    min-height: 10px;
+  }
+</style>
+
+</head>
+
+
+<body>
+  <div id="bg">
+    <div class="list-group">
+      <div class="list-group-item btn" id="search"> <i class="fa fa-search fa-5x gua-btn"></i> </div>
+      <div class="list-group-item btn" id="star"> <i class="fa fa-star fa-5x gua-btn"></i> </div>
+      <div class="list-group-item btn" id="group"> <i class="fa fa-group fa-5x gua-btn"></i> </div>
+      <div class="list-group-item btn" id="flag"> <i class="fa fa-flag fa-5x gua-btn"></i> </div>
+    </div>  
+  </div>
+
+<script type="text/javascript">
+  $("#search").click(function() {
+    gua.lupe();
+  });
+
+  $("#star").click(function() {
+    gua.stern();
+  });
+
+  $("#group").click(function() {
+    gua.gruppe();
+  });
+
+  $("#flag").click(function() {
+    $(this).css("background","blue");
+    gua.flagge();
+  });
+
+  $(document).keypress(function(e) {
+    var val = $("#address").val();
+    if(e.which == 13 && val != "") {
+      gua.update_address(val);
+    }
+  });
+
+</script>
+
+</body>
+
+</html>
