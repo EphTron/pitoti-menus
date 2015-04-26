@@ -1,24 +1,57 @@
+body{
+  font-family: 'Oswald', serif;
+
+  color:rgba(162,79,35,1);
+}
+
+p{
+  text-align: center;
+
+  position:relative;
+  top:30% ;
+}
+
 #menu{
-	padding:30px;
-	background-color: rgba(0,230,200,1);
+  padding: 30px;
+  background-color: rgba(66,48,2,1);
 }
 
 .button{
-	margin-bottom: 15px;
+  margin-bottom: 15px;
   margin-left:auto;
   margin-right: auto;
 
-	border: 1px solid rgba(85, 100, 75, 0.8);
-	border-radius: 15px 15px 15px 15px;
-
-	background-color: rgba(10,130,100,1);
+  border: 1px solid rgba(208, 233, 103, 1);
+  border-radius: 15px 15px 15px 15px;
+  
+  background: -webkit-radial-gradient(rgba(255,245,139,1), rgba(165,201,67,1),rgba(160,192,67,1)); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(rgba(255,245,139,1), rgba(165,201,67,1),rgba(160,192,67,1)); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(rgba(255,245,139,1), rgba(165,201,67,1),rgba(1160,192,67,1)); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(rgba(255,245,139,1), rgba(165,201,67,1),rgba(160,192,67,1)); /* Standard syntax (must be last) */
 }
 
+
+.button:hover{
+  background: -webkit-radial-gradient(rgba(255,245,139,1), rgba(255,245,139,1),rgba(160,192,67,1)); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(rgba(255,245,139,1), rgba(255,245,139,1),rgba(160,192,67,1)); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(rgba(255,245,139,1), rgba(255,245,139,1),rgba(160,192,67,1)); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(rgba(255,245,139,1), rgba(255,245,139,1),rgba(160,192,67,1)); /* Standard syntax (must be last) */
+}
+
+
+
 .button:last-child{
-	margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .entry{
+  text-align: center;
+  vertical-align: middle;
+
+  font-size: 4em;
+  font-size: 10vmin;
+
+
   margin-left:auto;
   margin-right: auto;
 }
